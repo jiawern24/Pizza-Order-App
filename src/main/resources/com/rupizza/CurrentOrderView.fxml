@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="610.0" style="-fx-background-color: aliceblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rupizza.CurrentOrderController">
+   <children>
+      <Label layoutX="235.0" layoutY="14.0" text="Pizza Order">
+         <font>
+            <Font name="Noteworthy Bold" size="25.0" />
+         </font>
+      </Label>
+      <ListView fx:id="orderListView" layoutX="31.0" layoutY="97.0" prefHeight="230.0" prefWidth="549.0" />
+      <Label layoutX="39.0" layoutY="62.0" text="Order Number">
+         <font>
+            <Font name="Noteworthy Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="orderNumberTextField" editable="false" layoutX="142.0" layoutY="63.0" prefHeight="26.0" prefWidth="103.0" />
+      <Label layoutX="39.0" layoutY="344.0" text="Subtotal   $">
+         <font>
+            <Font name="Noteworthy Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="subtotalTextField" editable="false" layoutX="116.0" layoutY="342.0" prefHeight="26.0" prefWidth="103.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="235.0" layoutY="344.0" text="Sales Tax  $">
+         <font>
+            <Font name="Noteworthy Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="salesTaxTextField" editable="false" layoutX="319.0" layoutY="342.0" prefHeight="26.0" prefWidth="103.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="39.0" layoutY="389.0" text="Order Total    $">
+         <font>
+            <Font name="Noteworthy Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="orderTotalTextField" editable="false" layoutX="142.0" layoutY="387.0" prefHeight="29.0" prefWidth="278.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="removePizzaButton" layoutX="443.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleRemovePizzaButton" prefHeight="26.0" prefWidth="113.0" text="Remove Pizza">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="placeOrderButton" layoutX="443.0" layoutY="389.0" mnemonicParsing="false" onAction="#handlePlaceOrderButton" prefHeight="26.0" prefWidth="113.0" text="Place Order">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
