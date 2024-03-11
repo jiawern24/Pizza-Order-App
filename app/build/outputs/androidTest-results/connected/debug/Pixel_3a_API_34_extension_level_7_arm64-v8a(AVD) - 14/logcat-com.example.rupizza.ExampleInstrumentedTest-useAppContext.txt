@@ -1,0 +1,2 @@
+12-08 23:57:32.869  5779  5800 I TestRunner: started: useAppContext(com.example.rupizza.ExampleInstrumentedTest)
+12-08 23:57:32.870  5779  5800 I TestRunner: finished: useAppContext(com.example.rupizza.ExampleInstrumentedTest)
