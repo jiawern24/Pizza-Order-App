@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Order Pizza"
+        android:icon="@drawable/pizza"
+        android:id="@+id/order"/>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Current Order"
+        android:icon="@drawable/cart"
+        android:id="@+id/currentOrder"/>
+</menu>

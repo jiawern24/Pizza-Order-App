@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:id="@+id/relativeLayout">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/picture_of_pizza_type" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageView"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pizzaType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/pizza_name"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/pizzaToppings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#424242"
+            android:text="@string/toppings_and_sauce"
+            android:textSize="11sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
